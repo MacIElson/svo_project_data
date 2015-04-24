@@ -92,4 +92,4 @@ def makePlot(test, save):
     
 done = ['scircle_3_zero_1','scorn_1_zero_1']
 
-makePlot('scircle_3_zero_1',False)
+makePlot('scircle_3_zero_1',True)
