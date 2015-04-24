@@ -17,7 +17,7 @@ plt.xlim(0,2)
 plt.ylim(0,2)
 
 x = linspace(0,2*pi, 100)
-offLineX = [0, 0]
+offLineX = [-2, 0]
 offLineY = [0, 1]
 
 plot (cos(x)+1, sin(x)+1, 'b')

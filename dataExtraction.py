@@ -73,6 +73,9 @@ def makePlot(test, save):
     if dataSet[:3] == "sci":
         x = linspace(0,2*pi, 200)
         plt.plot(8*cos(x)+8, 8*sin(x)+8,'b')
+        offLineX = [-1, 0]
+        offLineY = [-1, 8]
+        plt.plot(offLineX, offLineY, 'b')
 
 
 
