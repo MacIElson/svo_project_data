@@ -10,32 +10,32 @@ def makePlot(test, save):
     XSqrPts = [0, 14, 14, 0, 0, 14, 14, 0, 0, 17, 17, -1, -2]
     YSqrPts = [0, 0, 4, 4, 8, 8, 12, 12, 16, 16, -2, -2, -3]
 
-    dataSet = 'scorn_1_zero_1'
+    dataSet = test
 
     data =  {'scircle_1_zero_1_fast': {'xoffset': 0,'yoffset':0,'scale':1,'file':"zeroDeg/scircle_1_zero_1_fast.bag"}, 
              'scircle_1_zero_2_fast': {'xoffset': 0,'yoffset':0,'scale':1,'file':"zeroDeg/scircle_1_zero_2_fast.bag"},
              'scircle_1_zero_3':      {'xoffset': 0,'yoffset':0,'scale':1,'file':"zeroDeg/scircle_1_zero_3.bag"},
-             'scircle_3_zero_1':      {'xoffset': 0,'yoffset':0,'scale':1,'file':"zeroDeg/scircle_3_zero_1.bag"},
-             'scircle_3_zero_2':      {'xoffset': 0,'yoffset':0,'scale':1,'file':"zeroDeg/scircle_3_zero_2.bag"}, 
+             'scircle_3_zero_1':      {'xoffset': 0.07,'yoffset':7,'scale':-5.329780147,'file':"zeroDeg/scircle_3_zero_1.bag"},
+             'scircle_3_zero_2':      {'xoffset': 0,'yoffset':0,'scale':-5.294506949,'file':"zeroDeg/scircle_3_zero_2.bag"}, 
              'scircle_3_zero_3':      {'xoffset': 0,'yoffset':0,'scale':1,'file':"zeroDeg/scircle_3_zero_3.bag"},
              'scorn_1_zero_1':        {'xoffset': (14-12.65),'yoffset':0,'scale':-4.101963082,'file':"zeroDeg/scorn_1_zero_1.bag"},
-             'scorn_1_zero_2':        {'xoffset': 0,'yoffset':0,'scale':1,'file':"zeroDeg/scorn_1_zero_2.bag"}, 
-             'scorn_1_zero_3':        {'xoffset': 0,'yoffset':0,'scale':1,'file':"zeroDeg/scorn_1_zero_3.bag"},
-             'scorn_3_zero_1':        {'xoffset': 0,'yoffset':0,'scale':1,'file':"zeroDeg/scorn_3_zero_1.bag"},
-             'scorn_3_zero_2':        {'xoffset': 0,'yoffset':0,'scale':1,'file':"zeroDeg/scorn_3_zero_2.bag"}, 
-             'scorn_3_zero_3':        {'xoffset': 0,'yoffset':0,'scale':1,'file':"zeroDeg/scorn_3_zero_3.bag"},
+             'scorn_1_zero_2':        {'xoffset': 0,'yoffset':0,'scale':-4.097161253,'file':"zeroDeg/scorn_1_zero_2.bag"}, 
+             'scorn_1_zero_3':        {'xoffset': 0,'yoffset':0,'scale':-4.135893648,'file':"zeroDeg/scorn_1_zero_3.bag"},
+             'scorn_3_zero_1':        {'xoffset': 0,'yoffset':0,'scale':-6.021505376,'file':"zeroDeg/scorn_3_zero_1.bag"},
+             'scorn_3_zero_2':        {'xoffset': 0,'yoffset':0,'scale':-6.113537118,'file':"zeroDeg/scorn_3_zero_2.bag"}, 
+             'scorn_3_zero_3':        {'xoffset': 0,'yoffset':0,'scale':-6.024096386,'file':"zeroDeg/scorn_3_zero_3.bag"},
              'scircle_1_20deg_1':     {'xoffset': 0,'yoffset':0,'scale':1,'file':"20Deg/scircle_1_20deg_1.bag"}, 
              'scircle_1_20deg_2':     {'xoffset': 0,'yoffset':0,'scale':1,'file':"20Deg/scircle_1_20deg_2.bag"},
              'scircle_1_20deg_3':     {'xoffset': 0,'yoffset':0,'scale':1,'file':"20Deg/scircle_1_20deg_3.bag"},
-             'scircle_3_20deg_1':     {'xoffset': 0,'yoffset':0,'scale':1,'file':"20Deg/scircle_3_20deg_1.bag"},
-             'scircle_3_20deg_2':     {'xoffset': 0,'yoffset':0,'scale':1,'file':"20Deg/scircle_3_20deg_2.bag"}, 
+             'scircle_3_20deg_1':     {'xoffset': 0,'yoffset':0,'scale':6.088280061,'file':"20Deg/scircle_3_20deg_1.bag"},
+             'scircle_3_20deg_2':     {'xoffset': 0,'yoffset':0,'scale':6.123230004,'file':"20Deg/scircle_3_20deg_2.bag"}, 
              'scircle_3_20deg_3':     {'xoffset': 0,'yoffset':0,'scale':1,'file':"20Deg/scircle_3_20deg_3.bag"},
              'scorn_1_20deg_1':       {'xoffset': 0,'yoffset':0,'scale':1,'file':"20Deg/scorn_1_20deg_1.bag"},
              'scorn_1_20deg_2':       {'xoffset': 0,'yoffset':0,'scale':1,'file':"20Deg/scorn_1_20deg_2.bag"}, 
              'scorn_1_20deg_3':       {'xoffset': 0,'yoffset':0,'scale':1,'file':"20Deg/scorn_1_20deg_3.bag"},
-             'scorn_3_20deg_1':       {'xoffset': 0,'yoffset':0,'scale':1,'file':"20Deg/scorn_3_20deg_1.bag"},
-             'scorn_3_20deg_2':       {'xoffset': 0,'yoffset':0,'scale':1,'file':"20Deg/scorn_3_20deg_2.bag"}, 
-             'scorn_3_20deg_3':       {'xoffset': 0,'yoffset':0,'scale':1,'file':"20Deg/scorn_3_20deg_3.bag"},      
+             'scorn_3_20deg_1':       {'xoffset': 0,'yoffset':0,'scale':6.641366224,'file':"20Deg/scorn_3_20deg_1.bag"},
+             'scorn_3_20deg_2':       {'xoffset': 0,'yoffset':0,'scale':6.692160612,'file':"20Deg/scorn_3_20deg_2.bag"}, 
+             'scorn_3_20deg_3':       {'xoffset': 0,'yoffset':0,'scale':7.705008255,'file':"20Deg/scorn_3_20deg_3.bag"},      
          }
 
     px = []
@@ -72,7 +72,7 @@ def makePlot(test, save):
 
     if dataSet[:3] == "sci":
         x = linspace(0,2*pi, 200)
-        plt.plot(cos(x)+1, sin(x)+1,'b')
+        plt.plot(8*cos(x)+8, 8*sin(x)+8,'b')
 
 
 
@@ -90,6 +90,6 @@ def makePlot(test, save):
     plt.show()
     bag.close()
     
+done = ['scircle_3_zero_1','scorn_1_zero_1']
 
-
-makePlot('scorn_1_zero_1',True)
+makePlot('scircle_3_zero_1',False)
