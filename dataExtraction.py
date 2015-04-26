@@ -5,9 +5,9 @@ from pylab import *
 
 def makePlot(test, save):
 
-    fig = plt.figure()
+    fig1 = plt.figure()
 
-    #ax = fig.add_subplot(111, projection='3d')
+    
 
     XSqrPts = [0, 14, 14, 0, 0, 14, 14, 0, 0, 17, 17, -1, -2]
     YSqrPts = [0, 0, 4, 4, 8, 8, 12, 12, 16, 16, -2, -2, -3]
@@ -69,15 +69,15 @@ def makePlot(test, save):
         poseym =  [x/cos(0.34906585) for x in posey]
         posey = poseym
 
-    #ax.scatter(posex, posey, posez, c='r', marker='o')
+    
     #ax.scatter(posex, posey, c='b', marker='o')
     plt.plot( [x * data[dataSet]['scale'] + data[dataSet]['xoffset'] for x in posex], [x * data[dataSet]['scale'] + data[dataSet]['yoffset'] for x in posey], 'ro')
 
 
-    if dataSet[:3] == "sco":
+    if dataSet[:3] == "sco" and data[dataSet]['scale'] != 1:
         plt.plot(XSqrPts, YSqrPts, 'b')
 
-    if dataSet[:3] == "sci":
+    if dataSet[:3] == "sci" and data[dataSet]['scale'] != 1:
         x = linspace(0,2*pi, 200)
         plt.plot(8*cos(x)+8, 8*sin(x)+8,'b')
         offLineX = [-1, 0]
@@ -91,9 +91,21 @@ def makePlot(test, save):
     #plot( 3*cos(an), 3*sin(an) )
     plt.axis('equal')
 
+    fig2 = plt.figure()
+    plt.plot( [x * data[dataSet]['scale'] for x in posez], 'ro')
+
+    fig3 = plt.figure()
+    ax = fig3.add_subplot(111, projection='3d')
+    ax.scatter(posex, posey, posez, c='r', marker='o')
+    plt.xlabel('x')
+    plt.ylabel('y')
+    #plt.zlabel('z')
+
     if save:
-        plt.savefig('Graphs/' + dataSet + '.png')
-        plt.savefig('Graphs/' + dataSet + '.eps')
+        plt.savefig(fig1,'Graphs/' + dataSet + 'xy.png')
+        plt.savefig(fig1,'Graphs/' + dataSet + 'xy.eps')
+        plt.savefig(fig2,'Graphs/' + dataSet + 'z.png')
+        plt.savefig(fig2,'Graphs/' + dataSet + 'z.eps')
         print "saved"
 
     plt.show()
