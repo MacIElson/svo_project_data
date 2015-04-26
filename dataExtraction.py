@@ -114,10 +114,10 @@ def makePlot(test, save):
     plt.show()
     bag.close()
     
-done = ['scircle_3_zero_1','scircle_3_zero_2','scorn_1_zero_1']
+done = ['scircle_3_zero_1','scircle_3_20deg_1','scorn_1_zero_1']
 
 
-makePlot('scorn_3_20deg_3',True)
+makePlot('scircle_3_20deg_1',False)
 
 done = ['scorn_1_zero_1, scorn_1_zero_2, scorn_1_zero_3', 'scorn_3_zero_1', 'scorn_3_zero_2', 'scorn_3_zero_3',
          'scorn_1_20deg_1', 'scorn_1_20deg_2', 'scorn_1_20deg_3', 'scorn_3_20deg_1', 'scorn_3_20deg_2', 'scorn_3_20deg_3',]
