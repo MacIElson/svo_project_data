@@ -117,6 +117,7 @@ def makePlot(test, save):
 done = ['scircle_3_zero_1','scircle_3_zero_2','scorn_1_zero_1']
 
 
-makePlot('scircle_1_zero_1_fast',True)
+makePlot('scorn_3_20deg_3',True)
 
-done = ['scorn_1_zero_2, scorn_1_zero_3, scorn_3_zero_1']
+done = ['scorn_1_zero_1, scorn_1_zero_2, scorn_1_zero_3', 'scorn_3_zero_1', 'scorn_3_zero_2', 'scorn_3_zero_3',
+         'scorn_1_20deg_1', 'scorn_1_20deg_2', 'scorn_1_20deg_3', 'scorn_3_20deg_1', 'scorn_3_20deg_2', 'scorn_3_20deg_3',]
