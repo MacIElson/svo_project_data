@@ -27,15 +27,15 @@ def makePlot(test, save):
              'scircle_1_20deg_1':     {'xoffset': 0,'yoffset':0,'scale':1,'file':"20Deg/scircle_1_20deg_1.bag"}, 
              'scircle_1_20deg_2':     {'xoffset': 0,'yoffset':0,'scale':1,'file':"20Deg/scircle_1_20deg_2.bag"},
              'scircle_1_20deg_3':     {'xoffset': 0,'yoffset':0,'scale':1,'file':"20Deg/scircle_1_20deg_3.bag"},
-             'scircle_3_20deg_1':     {'xoffset': 0,'yoffset':0,'scale':6.088280061,'file':"20Deg/scircle_3_20deg_1.bag"},
-             'scircle_3_20deg_2':     {'xoffset': 0,'yoffset':0,'scale':6.123230004,'file':"20Deg/scircle_3_20deg_2.bag"}, 
-             'scircle_3_20deg_3':     {'xoffset': 0,'yoffset':0,'scale':1,'file':"20Deg/scircle_3_20deg_3.bag"},
+             'scircle_3_20deg_1':     {'xoffset': 0,'yoffset':0,'scale':-6.086982987,'file':"20Deg/scircle_3_20deg_1.bag"},
+             'scircle_3_20deg_2':     {'xoffset': 0,'yoffset':0,'scale':-6.109715211,'file':"20Deg/scircle_3_20deg_2.bag"}, 
+             'scircle_3_20deg_3':     {'xoffset': 0,'yoffset':0,'scale':-1,'file':"20Deg/scircle_3_20deg_3.bag"},
              'scorn_1_20deg_1':       {'xoffset': 0,'yoffset':0,'scale':1,'file':"20Deg/scorn_1_20deg_1.bag"},
              'scorn_1_20deg_2':       {'xoffset': 0,'yoffset':0,'scale':1,'file':"20Deg/scorn_1_20deg_2.bag"}, 
              'scorn_1_20deg_3':       {'xoffset': 0,'yoffset':0,'scale':1,'file':"20Deg/scorn_1_20deg_3.bag"},
-             'scorn_3_20deg_1':       {'xoffset': 0,'yoffset':0,'scale':6.641366224,'file':"20Deg/scorn_3_20deg_1.bag"},
-             'scorn_3_20deg_2':       {'xoffset': 0,'yoffset':0,'scale':6.692160612,'file':"20Deg/scorn_3_20deg_2.bag"}, 
-             'scorn_3_20deg_3':       {'xoffset': 0,'yoffset':0,'scale':7.705008255,'file':"20Deg/scorn_3_20deg_3.bag"},      
+             'scorn_3_20deg_1':       {'xoffset': 0,'yoffset':0,'scale':-6.636352755,'file':"20Deg/scorn_3_20deg_1.bag"},
+             'scorn_3_20deg_2':       {'xoffset': 0,'yoffset':0,'scale':-6.675518818,'file':"20Deg/scorn_3_20deg_2.bag"}, 
+             'scorn_3_20deg_3':       {'xoffset': 0,'yoffset':0,'scale':-6.706766744,'file':"20Deg/scorn_3_20deg_3.bag"},      
          }
 
     px = []
@@ -78,7 +78,6 @@ def makePlot(test, save):
         plt.plot(offLineX, offLineY, 'b')
 
 
-
     plt.title(dataSet)
     plt.xlabel('Inches')
     plt.ylabel('Inches')
@@ -95,6 +94,6 @@ def makePlot(test, save):
     
 done = ['scircle_3_zero_1','scorn_1_zero_1']
 
-makePlot('scorn_3_zero_3',True)
+makePlot('scircle_3_20deg_3',False)
 
 done = ['scorn_1_zero_2, scorn_1_zero_3, scorn_3_zero_1']
