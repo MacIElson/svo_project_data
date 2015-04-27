@@ -38,9 +38,9 @@ def makePlot(test, save):
              #did not complete and no scaling data
              'scircle_1_20deg_3':     {'xoffset': 0,'yoffset':0,'scale':1,'file':"20Deg/scircle_1_20deg_3.bag"},
              #did not complete and no scaling data
-             'scircle_3_20deg_1':     {'xoffset': 0,'yoffset':8,'scale':-5.721212468,'file':"20Deg/scircle_3_20deg_1.bag"},
-             'scircle_3_20deg_2':     {'xoffset': 0,'yoffset':8,'scale':-5.739210285,'file':"20Deg/scircle_3_20deg_2.bag"}, 
-             'scircle_3_20deg_3':     {'xoffset': 0,'yoffset':8,'scale':-5.730211376,'file':"20Deg/scircle_3_20deg_3.bag"}, #scaling factor averaged
+             'scircle_3_20deg_1':     {'xoffset': 0,'yoffset':7.4,'scale':-5.721212468,'file':"20Deg/scircle_3_20deg_1.bag"},
+             'scircle_3_20deg_2':     {'xoffset': 0,'yoffset':7.4,'scale':-5.739210285,'file':"20Deg/scircle_3_20deg_2.bag"}, 
+             'scircle_3_20deg_3':     {'xoffset': 0,'yoffset':7.45,'scale':-5.730211376,'file':"20Deg/scircle_3_20deg_3.bag"}, #scaling factor averaged
              'scorn_1_20deg_1':       {'xoffset': 0,'yoffset':0,'scale':1,'file':"20Deg/scorn_1_20deg_1.bag"},
              'scorn_1_20deg_2':       {'xoffset': 0,'yoffset':0,'scale':1,'file':"20Deg/scorn_1_20deg_2.bag"}, 
              'scorn_1_20deg_3':       {'xoffset': 0,'yoffset':0,'scale':1,'file':"20Deg/scorn_1_20deg_3.bag"},
@@ -140,7 +140,7 @@ def makePlot(test, save):
     
 done = ['scircle_3_zero_1','scircle_3_20deg_1','scorn_1_zero_1']
 
-makePlot('scircle_3_20deg_2',False)
+makePlot('scircle_3_20deg_3',True)
 
 done = ['scorn_1_zero_1, scorn_1_zero_2, scorn_1_zero_3', 'scorn_3_zero_1', 'scorn_3_zero_2', 'scorn_3_zero_3',
          'scorn_1_20deg_1', 'scorn_1_20deg_2', 'scorn_1_20deg_3', 'scorn_3_20deg_1', 'scorn_3_20deg_2', 'scorn_3_20deg_3',]
